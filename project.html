@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="cursor"></div>
+<main class="main-wrapper">
+<section class="pro-sec" id="">
+
+</section>
+<div class="footer-height-block" id="contact"></div>
+<div class="footer-wrapper">
+<div class="footer-inner">
+<div class="col">
+<div class="left-inner mouse" value="3">
+<h2 class="heading-2">Contact:</h2>
+<img class="foot1" src="./image/foot1.svg">
+<img class="foot2" src="./image/foot2.svg">
+<img class="foot3" src="./image/foot3.webp">
+</div>
+</div>
+<div class="col">
+<div class="right-inner">
+<ul>
+<li><a href="">Facebook</a></li>
+<li><a href="">Linkedin</a></li>
+<li><a href="tel:+918825920406">Call</a></li>
+<li><a href="https://api.whatsapp.com/send?phone=8825920406">Whatsapp</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+<!-- partial -->
+<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+<script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="./script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+ <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(event) {
+        this.querySelectorAll(".mouse").forEach((shift) => {
+          const position = shift.getAttribute("value");
+          const x = (window.innerWidth - event.pageX * position) / 90;
+          const y = (window.innerHeight - event.pageY * position) / 90;
+  
+          shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+      }
+    </script>
+	<script>
+        jQuery('.ham.ham6').on("click", function () {
+            /* jQuery('.menu_sec').slideToggle();
+            jQuery(this).toggleClass('open'); */
+			 jQuery('.menu-sec').animate({
+                width: "toggle"
+            });
+        });
+		
+        jQuery('.dropdown-toggle').on("click", function () {
+         jQuery(this).parent().toggleClass('active');
+        });
+		jQuery(".ham.ham6").click(function(){
+       jQuery(".main-wrapper").toggleClass("main");
+});
+</script>
+
+</body>
+</html>
