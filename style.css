@@ -281,7 +281,7 @@ main.main-wrapper.main {
 
 main.main-wrapper {
     transition: .5s;
-
+    overflow-x: hidden;
 	
 }
 
@@ -1381,6 +1381,9 @@ img.handresume {
 img.mouse.cloud-abt, .man{
 	width:350px;
 }
+.man{
+	bottom:10vw;
+}
 .exp-inner .col-left{
 width: 100%;
 position: relative;
@@ -1412,7 +1415,7 @@ text-align: center;
         width: 100%;
     }	
 	.resume-sec {
-  padding: 50px 0px 0px 0px;
+  padding: 150px 0px 0px 0px;
 }
 .exp-inner {
   display: block;
@@ -1509,6 +1512,10 @@ height: 16.14em;
 img.mouse.cloud-abt, .man{
 	width:300px;
 }
+.man{
+	width:300px;
+	bottom:10vw;
+}
 .exp-inner .col-left{
 width: 100%;
 position: relative;
@@ -1540,7 +1547,7 @@ text-align: center;
         width: 100%;
     }	
 	.resume-sec {
-  padding: 50px 0px 0px 0px;
+  padding: 150px 0px 0px 0px;
 }
 .exp-inner {
   display: block;
@@ -1587,5 +1594,8 @@ transition: .5s;
 .skills a {
   position: absolute;
   right: 23px;
+}
+img.mouse.hand {
+    top: 19rem;
 }
 }
