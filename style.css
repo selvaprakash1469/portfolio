@@ -36,6 +36,11 @@ body {
     src: url("./fonts/FuturaStdHeavy.ttf");
 }
 
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("./fonts/Poppins-Regular.ttf");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -419,6 +424,7 @@ img.about3 {
 	    position: absolute;
 		right:0;
 		bottom:2vw;
+		width:350px;
 }
 
 img.mouse.cloud-abt {
@@ -429,16 +435,21 @@ img.mouse.cloud-abt {
 
 
 .right-inner aside {
-    font-family: "Brusher";
-    font-size: 2rem;
-    padding: 10rem 8rem 5rem 1rem;
-    color: #050038;
+font-size: 1.5rem;
+padding: 10rem 8rem 5rem 1rem;
+color: #050038;
+font-family: "FuturaBook";
+line-height: 3rem;
+z-index:1;
+position:relative;
 }
 
 
 .right-inner aside span {
-    color: #ffc107;
-	    font-family: "Brusher";
+color: #ff6575;
+font-family: "Brusher";
+font-size: 2.5rem;
+padding: 0px 20px;
 }
 
 .right-inner aside br{
@@ -1183,7 +1194,7 @@ float: left;
   line-height: 5rem;
 }
 .right-inner aside {
-  padding: 10rem 2rem 5rem 1rem;
+  padding: 4rem 2rem 5rem 1rem;
   font-size: 1.8rem;
 }
 .resume-img {
