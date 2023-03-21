@@ -9,6 +9,12 @@
 
 </head>
 <body>
+  <div class="spinner-wrapper">
+  <div 
+       id="svg__00" 
+       class="lottie"
+  ></div>
+  </div>
 <header>
 
 <div class="menu-sec">
@@ -241,6 +247,7 @@ My Experience...<br/>
 <script src='https://threejs.org/examples/js/libs/stats.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js'></script><script  src="./script.js"></script>
 <script  src="./script.js"></script>
 <script src="js/bootstrap.min.js"></script>
  <script type="text/javascript">
@@ -271,6 +278,20 @@ My Experience...<br/>
        jQuery(".main-wrapper").toggleClass("main");
 });
 </script>
-
+	<script>
+$(window).on('load',function(){
+	setTimeout(function(){ // allowing 3 secs to fade out loader
+	$('.spinner-wrapper').fadeOut('slow');
+	},3500);
+});
+</script>
+	<script>
+const animationRemote = bodymovin.loadAnimation({
+  container: document.getElementById('svg__00'),
+  path: 'https://assets9.lottiefiles.com/packages/lf20_rj4titti.json',
+  autoplay: true,
+  renderer: 'svg',
+  loop: true });
+</script>
 </body>
 </html>
