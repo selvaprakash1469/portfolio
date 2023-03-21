@@ -1215,6 +1215,89 @@ float: left;
   grid-area: 1 / 1 / 3 / 3;
 }
 
+.services-box{}
+.services-box a.item{
+  display: inline-block;
+  position: relative;
+  width: calc(100% / 4 );
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+  margin: 0 -2px;
+}
+.services-box .item .image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000
+}
+.services-box .item .image img{
+  width: auto;
+  height: 100%;
+  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  opacity: .2;
+  object-fit: cover;
+  -webkit-filter: invert(1)
+}
+
+.services-box .item.color-1 .content .icon svg path{fill: #00c6ff!important}
+.services-box .item.color-1:hover .image{background: #00c6ff;transition:.5s;}
+.services-box .item.color-2 .content .icon svg path{fill: #FF6B6B!important}
+.services-box .item.color-2:hover .image{background: #FF6B6B;transition:.5s;}
+.services-box .item.color-3 .content .icon svg path{fill: #6E48AA!important}
+.services-box .item.color-3:hover .image{background: #6E48AA;transition:.5s;}
+.services-box .item.color-4 .content .icon svg path{fill: #F9D423!important}
+.services-box .item.color-4:hover .image{background: #B9B6B6;transition:.5s;}
+
+.services-box .item:hover .image img{
+  -webkit-filter: invert(0);
+  opacity: .2;
+  height: 130%;
+}
+.services-box .item .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  writing-mode: tb-rl;
+  transition: all .1s ease
+}
+.services-box .item:hover .content{letter-spacing: .1em}
+.services-box .item .content .title{
+color: rgb(255 255 255);
+    line-height: 2;
+    font-size: 2.5em;
+    margin-right: 15px;
+    font-family: "FuturaStdHeavy";
+    text-transform: capitalize;
+    letter-spacing: 0.3rem;
+}
+.services-box .item:hover .content .title{color: #ffd02f}
+.services-box .item .content .icon{
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 30px
+}
+.services-box .item .content .icon svg{
+  display: inline-block;
+  width: 120px
+}
+.services-box .item .content .icon svg path{fill: rgba(255,255,255,.3)!important}
+.services-box .item:hover .content .icon svg path{fill: rgba(255,255,255,.9)!important}
+
+.services-box:hover .item .image img{opacity: .1}
+
+
 /* ////........Media Query........//// */
 
    
@@ -1472,6 +1555,9 @@ main.main-wrapper {
     transition: .5s;
     overflow-x: hidden;
 }
+.services-box .item .content .title {
+  font-size: 1.5em;
+}
 }
 
 @media screen and (max-width: 575px) {
@@ -1647,5 +1733,8 @@ transition: .5s;
 }
 img.mouse.hand {
     top: 19rem;
+}
+.services-box .item .content .title {
+  font-size: 1.5em;
 }
 }
