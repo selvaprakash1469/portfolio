@@ -210,6 +210,7 @@ canvas {
   background-repeat: no-repeat;
   background-position: 0% -50%;
   background-size: cover;
+  z-index: 1;
 }
 
 /* ---- stats.js ---- */
@@ -392,6 +393,8 @@ section.abt-sec {
     float: left;
     width: 100%;
         background: #e8e8e8;
+		z-index:1;
+		position:relative;
 }
 
 
@@ -483,6 +486,9 @@ padding: 0px 20px;
     width: 100%;
     padding: 0px 0px;
     background: #e8e8e8;
+	z-index:1;
+	position:relative;
+	    margin-top: -5px;
 }
 
 .resume-img {
@@ -783,7 +789,7 @@ position: static;
     top: 0%;
     right: 0%;
     bottom: 0%;
-    z-index: -5;
+    z-index: 0;
     height: 100vh;
 }
 
@@ -870,6 +876,7 @@ position: static;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-0%, -50%);
     width: 100%;
+    height: 100%;
 }
 
 
